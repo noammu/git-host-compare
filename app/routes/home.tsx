@@ -192,7 +192,6 @@ export default function Home() {
         <div className={styles.heroContent}>
           <Badge className={styles.heroBadge}>Platform Comparison</Badge>
           <h1 className={styles.heroTitle}>GitHub vs GitLab</h1>
-          <h1 className={styles.heroTitle}>THIS CAME FROM REMOTEEEEE</h1>
           <p className={styles.heroDescription}>
             An objective, comprehensive comparison of the two leading code hosting and collaboration platforms. Discover
             key differences, strengths, and which platform best fits your team's needs.
