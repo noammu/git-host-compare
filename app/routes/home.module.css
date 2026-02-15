@@ -7,7 +7,7 @@
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--color-accent-2) 0%, var(--color-accent-3) 100%);
+  background: #fff;
   padding: var(--space-9) var(--space-6);
   text-align: center;
   border-bottom: 1px solid var(--color-neutral-4);
@@ -67,7 +67,9 @@
 }
 
 .platformCard {
-  transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+  transition:
+    transform 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out);
 }
 
 .platformCard:hover {
@@ -286,7 +288,10 @@
 .alternativeCard {
   background-color: var(--color-neutral-1);
   border: 1px solid var(--color-neutral-4);
-  transition: transform 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out), border-color 0.2s var(--ease-out);
+  transition:
+    transform 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out),
+    border-color 0.2s var(--ease-out);
   display: flex;
   flex-direction: column;
 }
