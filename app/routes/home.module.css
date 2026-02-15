@@ -20,9 +20,66 @@
 
 .heroBadge {
   margin-bottom: var(--space-4);
-  background-color: var(--color-accent-9);
-  color: var(--color-accent-contrast);
+  background: linear-gradient(
+    90deg,
+    var(--violet-9),
+    var(--blue-9),
+    var(--cyan-9),
+    var(--blue-9),
+    var(--violet-9)
+  );
+  background-size: 300% 100%;
+  color: white;
   border: none;
+  animation: gradientShift 4s ease-in-out infinite, badgePulse 2s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(94, 114, 228, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBadge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(94, 114, 228, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(94, 114, 228, 0.8);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
 }
 
 .heroTitle {
