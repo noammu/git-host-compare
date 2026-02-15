@@ -207,13 +207,14 @@
 }
 
 .differenceCard {
-  background-color: var(--color-neutral-1);
-  border: 1px solid var(--color-neutral-4);
-  transition: border-color 0.2s var(--ease-out);
+  background: linear-gradient(135deg, var(--violet-3), var(--violet-2));
+  border: 1px solid var(--violet-6);
+  transition: border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
 }
 
 .differenceCard:hover {
-  border-color: var(--color-accent-7);
+  border-color: var(--violet-8);
+  box-shadow: 0 4px 12px rgba(142, 78, 198, 0.2);
 }
 
 .differenceIcon {
