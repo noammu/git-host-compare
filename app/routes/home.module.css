@@ -1,7 +1,7 @@
 /* Page Container */
 .page {
   min-height: 100vh;
-  background-color: var(--sky-1);
+  background-color: var(--sky-7);
   color: var(--color-neutral-12);
 }
 
